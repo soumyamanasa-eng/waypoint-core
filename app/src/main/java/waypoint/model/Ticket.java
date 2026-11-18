@@ -2,7 +2,6 @@ package waypoint.model;
 
 import java.time.Instant;
 import java.util.Objects;
-import java.util.Optional;
 
 /** ENTITY. Invariants:
 -   I1  entry is always present
@@ -40,12 +39,12 @@ public final class Ticket {
         return entry;
     }
 
-    public Optional<Instant> exit() {
-        return Optional.ofNullable(exit);
+    public Instant exit() {
+        return exit;
     }
 
-    public Optional<Money> fare() {
-        return Optional.ofNullable(fare);
+    public Money fare() {
+        return fare;
     }
 
     public boolean isOpen() {
